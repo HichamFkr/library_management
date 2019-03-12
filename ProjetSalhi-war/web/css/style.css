@@ -1,0 +1,326 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 janv. 2019, 12:24:12
+    Author     : ASUS
+*/
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color:#f4f4f4;
+    overflow-x:hidden;
+}
+.ui-panel-login{
+    width:80%;
+    height: 290px;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    overflow-x:hidden;
+    border-radius: 3px;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    background: #001232;
+}
+.sousnavbar{
+    height: 60px;
+    width: 0px;
+    background-color: #61D4C3;
+}
+.sousnavbar .ui-image-folder{
+    position: absolute;
+    top: 1.5%;
+    left: 1%;
+    transition:0.5s;
+}
+.sousnavbar h4{
+    color: #fff;
+    position: absolute;
+    top: 3.2%;
+    left: 15%;
+    transition:0.5s;
+}
+.navbar .ui-image-exit{
+    position: absolute;
+    right: 1%;
+    top: 2%;
+}
+.navbar .ui-image-notification{
+    position: absolute;
+    right: 5%;
+    top: 2%;
+}
+.navbar .ui-image-settings{
+    position: absolute;
+    right: 9%;
+    top: 2%;
+}
+.open-slide{
+    position: absolute;
+    top: 2%;
+    left: 1%;
+}
+.side-nav{
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color:#fff;
+  color: #000;
+  overflow-x:hidden;
+  transition:0.5s;
+}
+.ui-image-clear{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+table {
+  margin: 50px auto;
+  margin-top: 8%;
+  border-collapse: collapse;
+  width: 75%;
+  overflow-x:hidden;
+  transition: 0.5s;
+}
+thead{
+    background: #001232;
+    color: #fff;
+   
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 20px;
+}
+
+thead th{
+   border: 1px solid #001232 ; 
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+tbody tr:hover{
+    background: #61D4C3;
+    border: 0;
+}
+.ui-button-ajoute{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    right: 15%;
+    top: 10%;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: none;
+    background-color: #61D4C3;
+    background: url(../images/ic_add_white_24dp.png) no-repeat #61D4C3 18px 18px;   
+}
+.dialoge{
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    width: 600px;
+    height: 450px;
+    display: block;
+}
+.dialoge .navbar h4{
+    color: #fff;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    font-size: 24px;
+    
+}
+.dialoge .navbar{
+    margin-bottom: 5%;
+}
+.selected{
+    background: #61D4C3;
+}
+input{
+    margin-top: 3%;
+    height: 30px;
+    width: 90%;
+    margin-left: 2%;
+    background: #f4f4f4;
+    border: 1.5px solid #001232;
+    box-shadow: none;
+    font-size: 18px;
+}
+fieldset{
+    height: 60px;
+margin-bottom: 6%; 
+border: 0;
+}
+.fieldsetGouche{
+    width: 280px;
+    float: left;
+}
+legend{
+    margin-left: 2%;
+    color: #001232;
+    font-size: 17px;
+}
+.ui-button-submit{
+    clear: both;
+    width: 160px;
+    height: 40px;
+    background: #f4f4f4;
+    border: 1.5px solid #3b5998;
+    color: #001232;
+    font-size: 18px;
+    float: left;
+    margin-left: 2%;
+    border-radius: 5px;
+}
+.ui-button-submit:hover{
+    background: #3b5998;
+    color: #fff;
+}
+.ui-button-reset{   
+    width: 160px;
+    height: 40px;
+    background: #f4f4f4;
+    border: 1.5px solid #3b5998;
+    color: #001232;
+    font-size: 18px;
+    float: right;
+    margin-right:  2%;
+    border-radius: 5px;
+}
+.ui-button-reset:hover{
+    background: #3b5998;
+    color: #fff;
+}
+.titre{
+    color: #001232;
+    font-size: 24px;
+    margin: 20px 180px;
+    transition: 0.5s;
+    z-index: 1;
+}
+.separteur{
+    position: absolute;
+    left: -28px;
+    top: 15%;
+    background: #f4f4f4;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    border-bottom: 1px silver solid;
+    z-index: 0;
+}
+.erreurs{
+    border-color: red;
+}
+.valider{
+    border-color: #001232;
+}
+input[type="radio"]{
+    width: 15px;
+    border: none;
+    box-shadow: none;
+    border-color: #001232;
+    
+}
+.search{
+    width: 220px;
+    position: absolute;
+    right: 10%;
+    top: 7%;
+}
+.ui-button-reserver{
+    width: 160px;
+    height: 40px;
+    position: absolute;
+    left: 10.5%;
+    top: 18%;
+    border-radius: 5px;
+    border-color: #3b5998;
+}
+.ui-button-reserver:hover{
+    background: #3b5998;
+    color: white;
+}
+.search:hover{
+    border-color: #3b5998;
+}
+.a{
+  text-decoration:none;
+  color: inherit; 
+}
+.navbar .a{
+  float:left;
+  display:block;
+  color:#f2f2f2;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+  font-size:17px;
+}
+
+.navbar ul{
+  margin:8px 0 0 0;
+  list-style:none;
+  position: absolute;
+  right: 10px;
+
+}
+
+.navbar .a:hover{
+  background-color:#ddd;
+  color:#3b5998;
+}
+.side-nav .a{
+  padding:10px 10px 10px 30px;
+  text-decoration:none;
+  font-size:22px;
+  color:#000;
+  display:block;
+  transition:0.3s;
+  border-bottom: 1px solid silver;
+}
+
+.side-nav .a:hover {
+  color:#3b5998;
+}
+.side-nav li:hover{
+    background: #ddd;
+}
+.ui-button-login{
+     width: 160px;
+    height: 40px;
+    margin-top: 10%;
+    border-radius: 5px;
+    border-color: #3b5998;
+}
+.left{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #001232;
+    
+}
+.right{
+     position: absolute;
+    width: 50%;
+    height: 100%;
+    right:0;
+    top: 0;
+    background: #f2f2f2;
+    
+}
